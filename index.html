@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<section>
+		<div class="circle" id="colorCircle"></div>
+		<header>
+			<img src="longdrinklogocan.png" alt="" height="70px" >
+			<ul>
+				<li><a herf="#"> Home</a></li>
+				<li><a herf="#"> What's New</a></li>
+				<li><a herf="#"> Menu</a></li>
+				<li><a herf="#"> Contact</a></li>
+			</ul>
+		</header>	
+
+	
+		<content>
+			<div class="textbox">
+				<div>
+					<h1 class="gf">THE LONG <span>DRINK</span>,</h1>
+					<h3 class="gl"><span>A refreshing citrus soda with a premium liquor kick.</span></h3>
+					
+
+				</div>
+				<div class="des">
+					<h2 class="itm" id="foodTitle">TRADITIONAL</h2>
+					<p class="para">All Natural - 5.5% alc./vol.</p>
+					<a href="#" id="drinkTitle" >Learn More</a>	
+				</div>
+				
+			</div>
+			<div class="imgbox">
+				<img src="blue.png" class="food">
+			</div>
+			
+				
+			
+
+			<ul class="thumb">
+				<li><img src="blue.png" onclick="slide('blue.png', '#00b2e2'); changename('TRADITIONAL', '#00b2e2'); par('All Natural - 5.5% alc./vol.', '#00b2e2')"></li>
+				<li><img src="red.png" onclick="slide('red.png', '#CB304C'); changename('CRANBERRY', '#CB304C'); par('All Natural - 5.5% alc./vol.', '#CB304C')"></li>
+				<li><img src="black.png" onclick="slide('black.png', '#3B3A36'); changename('STRONG', '#3B3A36'); par('All Natural - 8.5% alc./vol.', '#3B3A36')"></li>
+				<li><img src="white.png" onclick="slide('white.png', '#c4c4c8'); changename('ZERO', '#C4C4C4'); par('0 carbs/0 sugar - 5% alc./vol.', '#C4C4C4')"></li>
+
+			</ul>
+
+			<ul class="sci">
+				<li><a href="#"><img src="facebook.png"></a></li>
+				<li><a href="#"><img src="twitter.png"></a></li>
+				<li><a href="#"><img src="instagram.png"></a></li>
+			</ul>
+		</content>
+	</section>
+	<script type="text/javascript">
+		function slide(anything,color) {
+			document.querySelector('.food').src = anything;
+			document.getElementById('colorCircle').style.backgroundColor = color;
+
+		}
+		function changename(nm,color)
+		{
+			document.querySelector('.itm').innerHTML=nm;
+
+		}
+		function par(pr,color)
+		{
+			document.querySelector('.para').innerHTML=pr;
+		}
+	</script>
+</body>
+</html>
